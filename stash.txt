@@ -1,0 +1,187 @@
+
+[11:57 131123]
+<!-- Dimensions are stated here -->
+
+This div was at 44 line, jusr below id="decision" section
+<div id="interior">
+    <label for="width">
+        width
+        <input type="number"
+                name="width" 
+                maxlength="4"
+                value="50" 
+                id="width"
+                required>
+    </label>
+    <label for="length">
+        length
+        <input type="number" 
+                name="length" 
+                maxlength="4" 
+                value="100"
+                id="length"
+                required>
+    </label>
+    <label for="height">
+        height
+        <input type="number" 
+                name="height" 
+                maxlength="4" 
+                value="12"
+                id="height"
+                required>
+    </label>
+
+    <!-- Room features are mentioned here -->
+    <label for="window">
+        window
+        <input type="number" 
+                name="window" 
+                maxlength="4"
+                value="2"
+                id="window">
+    </label>
+    <label for="door">
+        door
+        <input type="number" 
+                name="door" 
+                maxlength="3"
+                value="1"
+                id="door">
+    </label>
+    <label for="ceiling">
+        Include Ceiling: 
+        <input type="checkbox" name="ceiling" id="ceiling" value="True">
+    </label>
+
+    <label for="dropdownWallA">Wall A:</label>
+    <select id="dropdownWallA" class="walls" name="WallA">
+        <option value="">Select Wall A</option>
+        <option value="paint">Paint</option>
+        <option value="texture" >Texture</option>
+        <option value="wallpaper" >Wallpaper</option>
+    </select>
+    <label for="dropdownWallB">Wall B:</label>
+    <select id="dropdownWallB" class="walls" name="WallB">
+        <option value="">Select Wall B</option>
+        <option value="paint" >Paint</option>
+        <option value="texture" >Texture</option>
+        <option value="wallpaper" >Wallpaper</option>
+    </select>
+    <label for="dropdownWallC">Wall C:</label>
+    <select id="dropdownWallC" class="walls" name="WallC">
+        <option value="">Select Wall C</option>
+        <option value="paint" >Paint</option>
+        <option value="texture" >Texture</option>
+        <option value="wallpaper" >Wallpaper</option>
+    </select>
+    <label for="dropdownWallD">Wall D:</label>
+    <select id="dropdownWallD" class="walls" name="WallD">
+        <option value="">Select Wall D</option>
+        <option value="paint" >Paint</option>
+        <option value="texture" >Texture</option>
+        <option value="wallpaper" >Wallpaper</option>
+    </select>
+
+    <fieldset id="paint">
+        <p>Paint</p>
+        <label for="royal">
+            <input type="radio" 
+                    class="paint" 
+                    name="paint" 
+                    value="10" 
+                    data-price="10" 
+                    id="royal" 
+                    disabled> 
+                    Royal
+        </label>
+        <label for="apocolite">
+            <input type="radio" 
+                    class="paint" 
+                    name="paint" 
+                    value="15" 
+                    data-price="15" 
+                    id="apocolite" 
+                    disabled> 
+                    Apocolite
+        </label> 
+        <label for="tractor">
+            <input type="radio" 
+                    class="paint" 
+                    name="paint" 
+                    value="20" 
+                    data-price="20" 
+                    id="tractor" 
+                    disabled>
+                     Tractor
+        </label> 
+    </fieldset>
+        
+    <fieldset id="texture">
+        <p>Texture</p>
+        <label for="textureEconomy">
+            <input type="radio" 
+                    class="texture" 
+                    name="texture" 
+                    value="35" 
+                    data-price="35" 
+                    id="textureEconomy" 
+                    disabled> 
+                    Economy
+        </label> 
+        <label for="texturePremium">
+            <input type="radio" 
+                    class="texture" 
+                    name="texture" 
+                    value="55" 
+                    data-price="55" 
+                    id="texturePremium" 
+                    disabled> 
+                    Premium
+        </label> 
+        <label for="textureLuxury">
+            <input type="radio" 
+                    class="texture" 
+                    name="texture" 
+                    value="90" 
+                    data-price="90" 
+                    id="textureLuxury" 
+                    disabled> 
+                    Luxury
+        </label> 
+    </fieldset>
+        
+    <fieldset id="wallpaper">
+        <p>Wallpaper</p>
+        <label for="wallpaperEconomy">
+            <input type="radio" 
+                    class="wallpaper" 
+                    name="wallpaper" 
+                    value="3300" 
+                    data-price="" 
+                    id="wallpaperEconomy" 
+                    disabled> 
+                    Economy
+        </label> 
+        <label for="wallpaperPremium">
+            <input type="radio" 
+                    class="wallpaper" 
+                    name="wallpaper" 
+                    value="6100" 
+                    data-price="" 
+                    id="wallpaperPremium" 
+                    disabled> 
+                    Premium
+        </label> 
+        <label for="wallpaperLuxury">
+            <input type="radio"  
+                    class="wallpaper" 
+                    name="wallpaper" 
+                    value="100000" 
+                    data-price="" 
+                    id="wallpaperLuxury" 
+                    disabled> 
+                    Luxury
+        </label> 
+    </fieldset>
+</div>

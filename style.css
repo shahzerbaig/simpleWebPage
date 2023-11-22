@@ -1,0 +1,86 @@
+form, #interior{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 50px;
+    gap: 10px;
+}
+/* Interios Styles */
+#dimensions{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+#room_atrributes{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+#roomNavigationWrapper{
+    border: 1px solid black;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 
+This is for render-space
+*/
+#interior{
+    display: flex;
+    flex-direction: column;
+}
+.border{
+    border: 1px solid black;
+    margin: 2px;
+}   
+#exterior{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+/* Recommendation Box */
+.recommendationBoxContainer{
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recommendationBoxContainer > img{
+    height: 150px;
+    width: 300px;
+}
+.recommendationBoxContainer > p,h4{
+    margin: 0;
+    padding: 0;
+}
+
+/* Labor Days Box */
+.laborDaysEstimationBoxContainer{
+    font-weight: 800;
+    border: 1px solid black;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+.laborDaysEstimationBoxContainer > *{
+    margin: 5px;
+}
+
+/* Cost Box */
+.costBox{
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+}
+.costBox > *{
+    margin: 5px;
+    padding: 10px;
+}

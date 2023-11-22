@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paintculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="paintculator_window">
+        <div id="form_wrapper">
+                <!-- This is the Space for room Navigation -->
+            <div id="roomNavWrapper">
+                <div id="addRoomButtonWrapper">
+                    <button id="addRoom">Add Rooms +</button>
+                    <input type="text" name="" id="addRoomNameBox">
+                </div>
+                <div id="roomNavigationWrapper">
+
+                </div>
+            </div>
+            <!-- This is the Paintculator Form-->
+            <div class="rooms">
+                Rooms
+                <div class="rooms-section">
+                    <p><span id="roomName"></span></p>
+                </div>
+            </div>
+    <form id="myform" class="paint-form" name="Paintculator">
+        <section id="decision" class="paint-form">
+                    <!-- The Attributes for selecting the settings of Calculations -->
+            <label for="planingFor">
+                I am Planning For: 
+                <input type="checkbox" name="planingFor" class="checkboxgroup1" id="fresh-painting" value="15"> <b>Fresh Painting</b>
+                <input type="checkbox" name="planingFor" class="checkboxgroup1" id="re-painting" value="25"><b>Re Painting</b>
+            </label>
+            <label for="space">
+                Select space: 
+                <input type="checkbox" name="space" class="checkboxgroup2" id="interior" value="35"> <b>Interior</b>
+                <input type="checkbox" name="space" class="checkboxgroup2" id="exterior" value="20"><b>Exterior</b>
+            </label>
+            
+        </section>
+
+
+        <section id="render-space" class="paint-form"></section>
+            
+        <!--<button 
+            type="button"
+            id="calculate" 
+            style="height: 50px;width: 300px;"
+            onclick="submitForm()">submit</button> -->
+        <input type="submit" value="Calculate">
+
+    </form>
+
+        </div>    
+    </div>
+    
+
+    <script defer type="module" src="./model.mjs"></script>
+    <script defer type="module" src="./business.mjs"></script>
+    <script defer type="module" src="./ui.mjs"></script>
+    <script defer type="module" src="storage.js"></script>
+
+</body>
+</html>
